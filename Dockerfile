@@ -12,4 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run the app
-CMD ["python", "app.py"]
+# Command to run the API
+CMD ["python", "-m", "fastapi", "run", "main.py", "--port", "8000"]
